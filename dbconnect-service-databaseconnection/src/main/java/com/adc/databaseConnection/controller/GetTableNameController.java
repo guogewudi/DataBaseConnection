@@ -11,6 +11,7 @@ import com.adc.common.vo.R;
 import com.adc.databaseConnection.service.impl.GetTableNameServiceImpl;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,12 +24,13 @@ import java.util.List;
  map.put("tablename",tableNames);
  */
 @RestController
+@CrossOrigin//跨域
 public class GetTableNameController {
     @Autowired
     GetTableNameServiceImpl getTableNameService;
 
 
-    @PostMapping("/getTableName")
+    @PostMapping("/database/getTableName/")
     @ApiOperation(value = "查询该数据库所有表名")
     public R  getTableName(HttpSession session) throws Exception {
         //从session获取了list

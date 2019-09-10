@@ -48,7 +48,7 @@ public class DataBaseConnectionController {
         private String database_username;
         private String database_password;
      */
-    @PostMapping("/databaseConnect")
+    @PostMapping("/database/databaseConnect/")
     @ApiOperation("获取连接对象（connection）方法")
     public R ConnectingDatabase(
             @ApiParam(name = "databaseParamType", value = "数据库参数类型：包括四个字段（type,url,username,password）", required = true)
