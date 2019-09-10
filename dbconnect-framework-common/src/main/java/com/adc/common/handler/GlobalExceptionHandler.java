@@ -2,7 +2,7 @@ package com.adc.common.handler;
 
 
 import com.adc.common.constants.ResultCodeEnum;
-import com.adc.common.exception.DBConnectException;
+import com.adc.common.exception.CustomException;
 import com.adc.common.util.ExceptionUtil;
 import com.adc.common.vo.R;
 import lombok.extern.slf4j.Slf4j;
@@ -52,12 +52,12 @@ public class GlobalExceptionHandler {
         return R.setResult(ResultCodeEnum.BAD_SQL_GRAMMAR);
     }
 
-    @ExceptionHandler(DBConnectException.class)
+    @ExceptionHandler(CustomException.class)
     @ResponseBody
-    public R error(DBConnectException e){
+    public R error(CustomException e){
         e.printStackTrace();
         log.error(ExceptionUtil.getMessage(e));
-        return R.error().message(e.getMessage()).code(e.getCode());
+        return R.error().message(e.getMessage()).code(e.getResultCode());
 
     }
 }

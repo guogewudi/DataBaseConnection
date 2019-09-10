@@ -16,7 +16,7 @@ import java.io.Serializable;
 @Getter
 public class DatabaseParamType implements Serializable {
     private String dataBaseType;
-    private String driver_name;
+
     private String connection_name;
     private String database_username;
     private String database_password;

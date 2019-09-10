@@ -40,9 +40,6 @@ public class DataBaseConnectionServiceImpl implements DataBaseConnectionService 
        }
 
     /**
-     *
-     *
-     *
      * 查询所有表名的函数
      * @param driver_name
      * @param connection_name

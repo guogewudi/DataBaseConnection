@@ -19,4 +19,16 @@ public class GetDataBaseTypeUtils {
         }
         return null;
     }
+
+    //最初的方法
+//    public Video getType(String type){
+//        if("java".equalsIgnoreCase(type)){
+//            return new JavaVideo();
+//        }else if("python".equalsIgnoreCase(type)) {
+//            return new PythonVideo();
+//
+//        }
+//        return null;
+//    }
+
 }
