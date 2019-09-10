@@ -16,34 +16,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * Description:
  */
 @SpringBootApplication
-//@EnableDiscoveryClient
-@EntityScan("com.adc.databaseConnection.entity")//扫描实体类
 
-@ComponentScan(basePackages="com.adc")
 public class DataBaseConnectionApplication {
     public static void main(String[] args) {
         SpringApplication.run(DataBaseConnectionApplication.class,args);
 
-    }
-
-//解决session跨域问题
-    @Bean
-    public WebMvcConfigurer corsConfigurer() {
-        return new WebMvcConfigurerAdapter() {
-            @Override
-            public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")
-                        .allowedOrigins("*")
-                        .allowedMethods("PUT", "DELETE","GET","POST")
-                        .allowedHeaders("*")
-                        .exposedHeaders("access-control-allow-headers",
-                                "access-control-allow-methods",
-                                "access-control-allow-origin",
-                                "access-control-max-age",
-                                "X-Frame-Options")
-                        .allowCredentials(true).maxAge(3600);
-            }
-        };
     }
 
 

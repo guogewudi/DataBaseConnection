@@ -57,7 +57,7 @@ public class GlobalExceptionHandler {
     public R error(CustomException e){
         e.printStackTrace();
         log.error(ExceptionUtil.getMessage(e));
-        return R.error().message(e.getMessage()).code(e.getResultCode());
+        return R.error().message("error");
 
     }
 }

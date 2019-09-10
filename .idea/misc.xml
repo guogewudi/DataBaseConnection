@@ -9,4 +9,7 @@
       </list>
     </option>
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/dbconnect-service-databaseconnection/src/main/resources/application.yml" />
+  </component>
 </project>

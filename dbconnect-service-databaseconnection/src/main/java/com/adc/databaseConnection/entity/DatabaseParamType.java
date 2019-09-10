@@ -13,7 +13,7 @@ import java.io.Serializable;
  */
 
 @Data
-@Getter
+
 public class DatabaseParamType implements Serializable {
     private String dataBaseType;
 
