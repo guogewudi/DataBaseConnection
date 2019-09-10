@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/DatabaseConnect.iml" filepath="$PROJECT_DIR$/.idea/DatabaseConnect.iml" />
       <module fileurl="file://$PROJECT_DIR$/dbconnect-framework-common/dbconnect-framework-common.iml" filepath="$PROJECT_DIR$/dbconnect-framework-common/dbconnect-framework-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/dbconnect-framework-parent/dbconnect-framework-parent.iml" filepath="$PROJECT_DIR$/dbconnect-framework-parent/dbconnect-framework-parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dbconnect-framework-parent/dbconnect-framework-parent.iml" filepath="$PROJECT_DIR$/dbconnect-framework-parent/dbconnect-framework-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dbconnect-service-databaseconnection/dbconnect-service-databaseconnection.iml" filepath="$PROJECT_DIR$/dbconnect-service-databaseconnection/dbconnect-service-databaseconnection.iml" />
     </modules>
   </component>
 </project>

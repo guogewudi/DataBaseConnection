@@ -7,11 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dbconnect-framework-common" />
+        <module name="dbconnect-service-databaseconnection" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="dbconnect-framework-common" target="1.8" />
       <module name="dbconnect-framework-parent" target="1.8" />
+      <module name="dbconnect-service-databaseconnection" target="1.8" />
+      <module name="dbconnectservicedatabaseconnect" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
