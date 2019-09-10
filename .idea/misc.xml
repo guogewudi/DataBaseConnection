@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/dbconnect-framework-parent/pom.xml" />
         <option value="$PROJECT_DIR$/dbconnect-framework-common/pom.xml" />
+        <option value="$PROJECT_DIR$/dbconnect-service-databaseconnection/pom.xml" />
       </list>
     </option>
   </component>
