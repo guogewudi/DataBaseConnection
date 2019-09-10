@@ -5,6 +5,7 @@ import com.adc.common.constants.ResultCodeEnum;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 
 @Data
 @ApiModel(value = "全局异常")
@@ -33,4 +34,11 @@ public class DBConnectException extends RuntimeException {
         super(resultCodeEnum.getMessage());
         this.code = resultCodeEnum.getCode();
         }
+    @Override
+    public String toString() {
+        return "CustomizeException{" +
+                "code=" + code +
+                "message=" + this.getMessage() +
+                '}';
+    }
 }

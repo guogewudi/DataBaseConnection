@@ -9,7 +9,6 @@ import java.util.Date;
 
 
 @Component
-
 @Slf4j
 public class CommonMetaObjectHandler implements MetaObjectHandler {
 
